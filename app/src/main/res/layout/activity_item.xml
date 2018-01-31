@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.student.rejestracjawizyt.Item">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jan "
+        android:id="@+id/imie_l"
+        android:layout_above="@id/wybierz"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+
+        android:layout_marginStart="22dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/imie_l"
+        android:id="@+id/nazwisko_l"
+        android:textColor="@color/colorPrimary"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="50dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="Kowalski"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/nazwisko_l"
+
+        android:text="Godziny otwarcia:"
+        android:textColor="@color/colorPrimaryDark"
+
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:textSize="10dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/nazwisko_l"
+        android:layout_below="@id/imie_l"
+        android:text="Pn-Pt 7.00-16.00"
+        android:textColor="@android:color/darker_gray"
+
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:textSize="20dp"
+
+        />
+
+
+    <Button
+        android:id="@+id/wybierz"
+        android:layout_width="324dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/nazwisko_l"
+        android:layout_gravity="center"
+        android:layout_marginTop="77dp"
+        android:layout_alignStart="@id/imie_l"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@android:color/white"
+        android:text="WYBIERZ" />
+
+
+
+</RelativeLayout>
